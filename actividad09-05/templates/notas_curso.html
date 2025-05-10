@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Notas del Curso</title>
+</head>
+<body>
+    <h1>Notas del Curso</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Estudiante</th>
+                <th>Nota</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for nota in notas %}
+                <tr>
+                    <td>{{ nota['nombre'] }} {{ nota['apellido'] }}</td>
+                    <td>{{ nota['nota'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
